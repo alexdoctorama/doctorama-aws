@@ -36,7 +36,7 @@ import Doctor1 from "../../assets/images/doctors/doctor-01.jpg";
 import Doctor2 from "../../assets/images/doctors/doctor-02.jpg";
 import Doctor3 from "../../assets/images/doctors/doctor-03.jpg";
 import Doctor4 from "../../assets/images/doctors/doctor-04.jpg";
-import doctorbannerimage from "../../assets/images/doctor-banner.png";
+//import doctorbannerimage from "../../assets/images/doctor-banner.png";
 
 // import FooterLogo from "../../assets/images/footer-logo.png";
 // import LoginButton from "../../assets/images/login-btn.png";
