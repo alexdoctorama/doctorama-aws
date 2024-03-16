@@ -52,7 +52,7 @@ const Dashboard = (props) => {
       console.log('Token:', storedToken); // Print token to console
     }
 
-    fetch("http://localhost:8080/users/user", {
+    fetch("http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/users/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -79,7 +79,7 @@ const Dashboard = (props) => {
         });
 
     //Call to http://localhost:8080/appointments/patient putting token in header
-    fetch("http://localhost:8080/appointments/patient", {
+    fetch("http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/appointments/patient", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

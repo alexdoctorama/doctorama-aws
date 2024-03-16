@@ -41,7 +41,7 @@ const Register = (props) => {
     };
 
     // Make an HTTP POST request to localhost:8080/users with form data
-    fetch("http://localhost:8080/users", {
+    fetch("http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

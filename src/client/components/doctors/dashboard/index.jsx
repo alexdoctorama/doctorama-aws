@@ -22,7 +22,7 @@ const DoctorDashboard = (props) => {
 
 
     // Make a fetch request to the endpoint with the token as a header
-    fetch("http://localhost:8080/users/user", {
+    fetch("http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/users/user", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

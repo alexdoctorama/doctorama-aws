@@ -26,7 +26,7 @@ const LoginContainer = (props) => {
     event.preventDefault();
 
     // Make an HTTP POST request to localhost:8080/login with email and password
-    fetch("http://localhost:8080/login", {
+    fetch("http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -63,7 +63,7 @@ const Booking = (props) => {
     // Function to fetch specialist availability data
     const fetchSpecialistAvailability = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/specialistsAvailabilities/specialist/${doctor_uuid}`);
+        const response = await fetch(`http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/specialistsAvailabilities/specialist/${doctor_uuid}`);
         if (response.ok) {
           const data = await response.json();
           // Set specialist availability data in state
