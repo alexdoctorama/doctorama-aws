@@ -1,0 +1,88 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Group",
+      "label": "Patient Data",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/PatientData/properties/Name"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/PatientData/properties/Surname"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/PatientData/properties/Passport"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/PatientData/properties/DateOfBirth"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/PatientData/properties/Phone"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/PatientData/properties/Address"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Actual Problem",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/ActualProblem",
+          "options": {
+            "multi": true
+          }
+        }]
+    },
+    {
+      "type": "Group",
+      "label": "History of Problem",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/HistoryOfProblem",
+          "options": {
+            "multi": true
+          }
+        }]},
+    {
+      "type": "Group",
+      "label": "Explanatory Phase",
+      "elements": [{
+        "type": "Control",
+        "scope": "#/properties/ExplanatoryPhase",
+        "options": {
+          "multi": true
+        }
+      }]},
+    {
+      "type": "Group",
+      "label": "Intervention Phase",
+      "elements": [{
+        "type": "Control",
+        "scope": "#/properties/InterventionPhase",
+        "options": {
+          "multi": true
+        }
+      }]}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "PatientData": {
+      "type": "object",
+      "properties": {
+        "Name": { "type": "string" },
+        "Surname": { "type": "string" },
+        "Passport": { "type": "string" },
+        "DateOfBirth": { "type": "string", "format": "date" },
+        "Phone": { "type": "string" },
+        "Address": { "type": "string" }
+      }
+    },
+    "ActualProblem": { "type": "string" },
+    "HistoryOfProblem": { "type": "string" },
+    "ExplanatoryPhase": { "type": "string" },
+    "InterventionPhase": { "type": "string" }
+  }
+}

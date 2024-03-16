@@ -1,0 +1,260 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "PatientData": {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Surname": {
+          "type": "string"
+        },
+        "Passport": {
+          "type": "string"
+        },
+        "DateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "Phone": {
+          "type": "string"
+        },
+        "Address": {
+          "type": "string"
+        }
+      }
+    },
+    "FamilyBackground": {
+      "type": "object",
+      "properties": {
+        "OverweightOrObesity": {
+          "type": "string"
+        },
+        "HeartProblems": {
+          "type": "string"
+        },
+        "DMType1": {
+          "type": "string"
+        },
+        "DMType2": {
+          "type": "string"
+        },
+        "HTA": {
+          "type": "string"
+        },
+        "Cancer": {
+          "type": "string"
+        },
+        "Hypertriglyceridemia": {
+          "type": "string"
+        },
+        "Hypercholesterolemia": {
+          "type": "string"
+        },
+        "KidneyInsufficiency": {
+          "type": "string"
+        },
+        "RespiratoryDiseases": {
+          "type": "string"
+        },
+        "MentalIllnesses": {
+          "type": "string"
+        },
+        "Alcoholism": {
+          "type": "string"
+        },
+        "Asthma": {
+          "type": "string"
+        },
+        "Cirrhosis": {
+          "type": "string"
+        },
+        "Anemia": {
+          "type": "string"
+        },
+        "Others": {
+          "type": "string"
+        }
+      }
+    },
+    "PathologicalBackground": {
+      "type": "object",
+      "properties": {
+        "Diarrhea": {
+          "type": "string"
+        },
+        "Hypertriglyceridemia": {
+          "type": "string"
+        },
+        "Gastritis": {
+          "type": "string"
+        },
+        "Sore": {
+          "type": "string"
+        },
+        "Overweight": {
+          "type": "string"
+        },
+        "Obesity": {
+          "type": "string"
+        },
+        "Nausea": {
+          "type": "string"
+        },
+        "ThrewUp": {
+          "type": "string"
+        },
+        "Colitis": {
+          "type": "string"
+        },
+        "DMType1": {
+          "type": "string"
+        },
+        "DMType2": {
+          "type": "string"
+        },
+        "Hypercholesterolemia": {
+          "type": "string"
+        },
+        "Anemia": {
+          "type": "string"
+        },
+        "BulimiaNervosa": {
+          "type": "string"
+        },
+        "Sedentarism": {
+          "type": "string"
+        }
+      }
+    },
+    "NonPathological": {
+      "type": "object",
+      "properties": {
+        "AlcoholConsumption": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "AlcoholConsumptionFrequency": {
+          "type": "string",
+          "enum": ["DIARY", "Several", "TIMES PER WEEK", "PARTIES", "SELDOM", "NEVER"]
+        },
+        "WhatDrinksDoYouConsume": {
+          "type": "string"
+        },
+        "Smoking": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "SmokingFrequency": {
+          "type": "string",
+          "enum": ["DIARY", "Several", "TIMES PER WEEK", "PARTIES", "SELDOM", "NEVER"]
+        }
+      }
+    },
+    "Dietetics": {
+      "type": "object",
+      "properties": {
+        "UsedToWeighYourself": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "WeighingFrequency": {
+          "type": "string",
+          "enum": ["DIARY", "Several", "TIMES PER WEEK", "PARTIES", "SELDOM", "NEVER"]
+        },
+        "DoYouHaveProblemsWithYourWeight": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "ProblemsWithWeight": {
+          "type": "string",
+          "enum": ["UNSTABLE", "UNDER WEIGHT", "OVERWEIGHT", "OBESITY"]
+        },
+        "StartProblemWithWeightDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "IdealWeight": {
+          "type": "number"
+        },
+        "MaximumWeight": {
+          "type": "number"
+        },
+        "TargetWeight": {
+          "type": "number"
+        },
+        "DoSomePhysicalActivity": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "PhysicalActivityFrequency": {
+          "type": "string",
+          "enum": ["DIARY", "Several", "TIMES PER WEEK", "PARTIES", "SELDOM", "NEVER"]
+        },
+        "PreviouslyOnADiet": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "DietWhen": {
+          "type": "string"
+        },
+        "DietResults": {
+          "type": "string"
+        },
+        "Appetite": {
+          "type": "string",
+          "enum": ["Well", "Moderate", "Poor"]
+        },
+        "ChangeDietMotif": {
+          "type": "object",
+          "properties": {
+            "ChangedForWork": {
+              "type": "string",
+              "enum": ["Yes", "No"]
+            },
+            "ChangedForStudy": {
+              "type": "string",
+              "enum": ["Yes", "No"]
+            },
+            "ChangedForMoving": {
+              "type": "string",
+              "enum": ["Yes", "No"]
+            },
+            "Motif": {
+              "type": "string"
+            }
+          }
+        },
+        "CravingsTime": {
+          "type": "string"
+        },
+        "FavoriteFoods": {
+          "type": "string"
+        },
+        "DislikedFoods": {
+          "type": "string"
+        },
+        "AllergicFoods": {
+          "type": "string"
+        },
+        "DietarySupplement": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "FoodPreparer": {
+          "type": "string"
+        },
+        "EatBetweenMeals": {
+          "type": "string",
+          "enum": ["Yes", "No"]
+        },
+        "SugarInDrinks": {
+          "type": "string",
+          "enum": ["Yes", "No", "Sometimes"]
+        }
+      }
+    }
+  }
+}

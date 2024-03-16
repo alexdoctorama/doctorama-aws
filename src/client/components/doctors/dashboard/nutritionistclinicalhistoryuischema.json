@@ -1,0 +1,527 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Group",
+      "label": "Patient Data",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/PatientData/properties/Name",
+          "label": "Name",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PatientData/properties/Surname",
+          "label": "Surname",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PatientData/properties/Passport",
+          "label": "Passport",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PatientData/properties/DateOfBirth",
+          "label": "Date of Birth",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PatientData/properties/Phone",
+          "label": "Phone",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PatientData/properties/Address",
+          "label": "Address",
+          "options": {
+            "format": "text"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Family Background",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/OverweightOrObesity",
+          "label": "Overweight or Obesity",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/HeartProblems",
+          "label": "Heart Problems",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/DMType1",
+          "label": "DM Type 1",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/DMType2",
+          "label": "DM Type 2",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/HTA",
+          "label": "HTA",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/Cancer",
+          "label": "Cancer",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/Hypertriglyceridemia",
+          "label": "Hypertriglyceridemia",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/Hypercholesterolemia",
+          "label": "Hypercholesterolemia",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/KidneyInsufficiency",
+          "label": "Kidney Insufficiency",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/RespiratoryDiseases",
+          "label": "Respiratory Diseases",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/MentalIllnesses",
+          "label": "Mental Illnesses",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/Alcoholism",
+          "label": "Alcoholism",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/Asthma",
+          "label": "Asthma",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/Cirrhosis",
+          "label": "Cirrhosis",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/Anemia",
+          "label": "Anemia",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/FamilyBackground/properties/Others",
+          "label": "Others",
+          "options": {
+            "format": "text"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Pathological Background",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Diarrhea",
+          "label": "Diarrhea",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Hypertriglyceridemia",
+          "label": "Hypertriglyceridemia",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Gastritis",
+          "label": "Gastritis",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Sore",
+          "label": "Sore",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Overweight",
+          "label": "Overweight",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Obesity",
+          "label": "Obesity",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Nausea",
+          "label": "Nausea",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/ThrewUp",
+          "label": "Threw Up",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Colitis",
+          "label": "Colitis",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/DMType1",
+          "label": "DM Type 1",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/DMType2",
+          "label": "DM Type 2",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Hypercholesterolemia",
+          "label": "Hypercholesterolemia",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Anemia",
+          "label": "Anemia",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/BulimiaNervosa",
+          "label": "Bulimia Nervosa",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/PathologicalBackground/properties/Sedentarism",
+          "label": "Sedentarism",
+          "options": {
+            "format": "text"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Non-Pathological",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/NonPathological/properties/AlcoholConsumption",
+              "label": "Alcohol consumption",
+              "options": {
+                "format": "text"
+              }
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/NonPathological/properties/AlcoholConsumptionFrequency",
+              "label": "Frequency",
+              "options": {
+                "format": "text"
+              }
+            }
+          ]
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/NonPathological/properties/WhatDrinksDoYouConsume",
+          "label": "What drinks do you consume",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/NonPathological/properties/Smoking",
+              "label": "Smoking",
+              "options": {
+                "format": "text"
+              }
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/NonPathological/properties/SmokingFrequency",
+              "label": "Frequency",
+              "options": {
+                "format": "text"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Dietetics",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/Dietetics/properties/PreviouslyOnADiet",
+              "label": "Previously on a diet",
+              "options": {
+                "enum_titles": ["Yes", "No"],
+                "format": "text"
+              }
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/Dietetics/properties/DietWhen",
+              "label": "When",
+              "options": {
+                "format": "text"
+              }
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/Dietetics/properties/DietResults",
+              "label": "Results",
+              "options": {
+                "format": "text"
+              }
+            }
+          ]
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/Appetite",
+          "label": "Appetite",
+          "options": {
+            "enum_titles": ["Well", "Moderate", "Poor"],
+            "format": "text"
+          }
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/Dietetics/properties/ChangeDietMotif/properties/ChangedForWork",
+              "label": "Changed for work",
+              "options": {
+                "enum_titles": ["Yes", "No"],
+                "format": "text"
+              }
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/Dietetics/properties/ChangeDietMotif/properties/ChangedForStudy",
+              "label": "Changed for study",
+              "options": {
+                "enum_titles": ["Yes", "No"],
+                "format": "text"
+              }
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/Dietetics/properties/ChangeDietMotif/properties/ChangedForMoving",
+              "label": "Changed for moving",
+              "options": {
+                "enum_titles": ["Yes", "No"],
+                "format": "text"
+              }
+            }
+          ]
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/ChangeDietMotif/properties/Motif",
+          "label": "Motif",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/CravingsTime",
+          "label": "What time do you feel cravings?",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/FavoriteFoods",
+          "label": "Favorite foods",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/DislikedFoods",
+          "label": "Foods you don't like",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/AllergicFoods",
+          "label": "Foods that cause allergies",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/DietarySupplement",
+          "label": "Take some dietary supplement",
+          "options": {
+            "enum_titles": ["Yes", "No"],
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/FoodPreparer",
+          "label": "Who prepares the food at home",
+          "options": {
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/EatBetweenMeals",
+          "label": "Do you eat between meals",
+          "options": {
+            "enum_titles": ["Yes", "No"],
+            "format": "text"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/Dietetics/properties/SugarInDrinks",
+          "label": "Do you add sugar to drinks",
+          "options": {
+            "enum_titles": ["Yes", "No", "Some times"],
+            "format": "text"
+          }
+        }
+      ]
+    }
+  ]
+}

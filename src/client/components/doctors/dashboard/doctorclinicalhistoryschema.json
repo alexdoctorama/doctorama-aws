@@ -1,0 +1,111 @@
+{
+  "title": "Patient Consultation Form",
+  "type": "object",
+  "properties": {
+    "patientData": {
+      "title": "Patient Data",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "passport": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+    },
+    "reasonForConsultation": {
+      "type": "string",
+      "title": "Reason for Consultation"
+    },
+    "currentIllness": {
+      "type": "string",
+      "title": "Current Illness"
+    },
+    "background": {
+      "title": "Background",
+      "type": "object",
+      "properties": {
+        "familyHistory": {
+          "type": "string"
+        },
+        "pathologyHistory": {
+          "type": "string"
+        },
+        "pharmacologicalTreatment": {
+          "type": "string"
+        },
+        "allergies": {
+          "type": "string"
+        },
+        "gynecologicalHistory": {
+          "type": "string"
+        },
+        "vaccinationStatus": {
+          "type": "string"
+        }
+      }
+    },
+    "physicalExam": {
+      "title": "Physical Exam",
+      "type": "object",
+      "properties": {
+        "TA": {
+          "type": "string"
+        },
+        "FC": {
+          "type": "string"
+        },
+        "FR": {
+          "type": "string"
+        },
+        "SAT": {
+          "type": "string"
+        },
+        "headAndNeck": {
+          "type": "string"
+        },
+        "thorax": {
+          "type": "string"
+        },
+        "abdomen": {
+          "type": "string"
+        },
+        "genitourinary": {
+          "type": "string"
+        },
+        "extremities": {
+          "type": "string"
+        },
+        "neurological": {
+          "type": "string"
+        }
+      }
+    },
+    "laboratories": {
+      "type": "string",
+      "title": "Laboratories"
+    },
+    "analysis": {
+      "type": "string",
+      "title": "Analysis"
+    },
+    "diagnosis": {
+      "type": "string",
+      "title": "Diagnosis"
+    }
+  }
+}

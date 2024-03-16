@@ -1,0 +1,171 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Group",
+      "label": "Patient Data",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/patientData/properties/name"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/patientData/properties/surname"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/patientData/properties/passport"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/patientData/properties/dateOfBirth"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/patientData/properties/phone"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/patientData/properties/address"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Reason for Consultation",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/reasonForConsultation"
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Current Illness",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/currentIllness"
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Background",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/background/properties/familyHistory"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/background/properties/pathologyHistory"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/background/properties/pharmacologicalTreatment"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/background/properties/allergies"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/background/properties/gynecologicalHistory"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/background/properties/vaccinationStatus"
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Physical Exam",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/TA"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/FC"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/FR"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/SAT"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/headAndNeck"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/thorax"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/abdomen"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/genitourinary"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/extremities"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/physicalExam/properties/neurological"
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Laboratories",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/laboratories"
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Analysis",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/analysis"
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Diagnosis",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/diagnosis"
+        }
+      ]
+    }
+  ]
+}
