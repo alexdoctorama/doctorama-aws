@@ -814,44 +814,44 @@ const Header = () => {
                             Doctor Register
                           </Link>
                         </li>
-                        <li
-                          className={`has-submenu ${
-                            pathnames.includes("doctor-blog") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="/doctor-blog"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Blog
-                          </Link>
-                          <ul className="submenu">
-                            <li>
-                              <Link
-                                to="/doctor-blog"
-                                onClick={() => onhandleCloseMenu()}
-                              >
-                                Blog
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                to="/blog/blog-details"
-                                onClick={() => onhandleCloseMenu()}
-                              >
-                                Blog view
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                to="/blog/doctor-add-blog"
-                                onClick={() => onhandleCloseMenu()}
-                              >
-                                Add Blog
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
+                        {/*<li*/}
+                        {/*  className={`has-submenu ${*/}
+                        {/*    pathnames.includes("doctor-blog") ? "active" : ""*/}
+                        {/*  }`}*/}
+                        {/*>*/}
+                        {/*  <Link*/}
+                        {/*    to="/doctor-blog"*/}
+                        {/*    onClick={() => onhandleCloseMenu()}*/}
+                        {/*  >*/}
+                        {/*    Blog*/}
+                        {/*  </Link>*/}
+                        {/*  <ul className="submenu">*/}
+                        {/*    <li>*/}
+                        {/*      <Link*/}
+                        {/*        to="/doctor-blog"*/}
+                        {/*        onClick={() => onhandleCloseMenu()}*/}
+                        {/*      >*/}
+                        {/*        Blog*/}
+                        {/*      </Link>*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*      <Link*/}
+                        {/*        to="/blog/blog-details"*/}
+                        {/*        onClick={() => onhandleCloseMenu()}*/}
+                        {/*      >*/}
+                        {/*        Blog view*/}
+                        {/*      </Link>*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*      <Link*/}
+                        {/*        to="/blog/doctor-add-blog"*/}
+                        {/*        onClick={() => onhandleCloseMenu()}*/}
+                        {/*      >*/}
+                        {/*        Add Blog*/}
+                        {/*      </Link>*/}
+                        {/*    </li>*/}
+                        {/*  </ul>*/}
+                        {/*</li>*/}
                       </ul>
                     ) : (
                       ""
@@ -1292,573 +1292,573 @@ const Header = () => {
                   {/*    ""*/}
                   {/*  )}*/}
                   {/*</li>*/}
-                  <li
-                    className={`has-submenu ${
-                      url.includes("/pages") ? "active" : ""
-                    }`}
-                  >
-                    <Link
-                      to="#"
-                      className={isSideMenu == "pages" ? "subdrop" : ""}
-                      onMouseEnter={() =>
-                        toggleSidebar(
-                          isSideMenu == "pages" ? "submenu" : "pages"
-                        )
-                      }
-                    >
-                      Pages <i className="fas fa-chevron-down" />
-                    </Link>
-                    {isSideMenu == "pages" ? (
-                      <ul
-                        className={`${
-                          isSideMenu == "pages" ? "submenu d-block" : "submenu"
-                        }`}
-                      >
-                        <li
-                          className={`${
-                            pathnames.includes("/voice-call") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="/pages/aboutus"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            About Us
-                          </Link>
-                        </li>
-                        <li
-                          className={`${
-                            pathnames.includes("/video-call") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="/pages/contactus"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Contact Us
-                          </Link>
-                        </li>
+                  {/*<li*/}
+                  {/*  className={`has-submenu ${*/}
+                  {/*    url.includes("/pages") ? "active" : ""*/}
+                  {/*  }`}*/}
+                  {/*>*/}
+                  {/*  <Link*/}
+                  {/*    to="#"*/}
+                  {/*    className={isSideMenu == "pages" ? "subdrop" : ""}*/}
+                  {/*    onMouseEnter={() =>*/}
+                  {/*      toggleSidebar(*/}
+                  {/*        isSideMenu == "pages" ? "submenu" : "pages"*/}
+                  {/*      )*/}
+                  {/*    }*/}
+                  {/*  >*/}
+                  {/*    Pages <i className="fas fa-chevron-down" />*/}
+                  {/*  </Link>*/}
+                  {/*  {isSideMenu == "pages" ? (*/}
+                  {/*    <ul*/}
+                  {/*      className={`${*/}
+                  {/*        isSideMenu == "pages" ? "submenu d-block" : "submenu"*/}
+                  {/*      }`}*/}
+                  {/*    >*/}
+                  {/*      <li*/}
+                  {/*        className={`${*/}
+                  {/*          pathnames.includes("/voice-call") ? "active" : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/aboutus"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          About Us*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={`${*/}
+                  {/*          pathnames.includes("/video-call") ? "active" : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/contactus"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Contact Us*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
 
-                        <li
-                          className={`has-submenu ${
-                            pathnames.includes("/call") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="#0"
-                            className={
-                              isSideMenuthree == "call" ? "subdrop" : ""
-                            }
-                            onClick={() =>
-                              toggleSidebarthree(
-                                isSideMenuthree == "call" ? "" : "call"
-                              )
-                            }
-                          >
-                            Call{" "}
-                          </Link>
-                          {isSideMenuthree == "call" ? (
-                            <ul
-                              className={
-                                isSideMenuthree == "call"
-                                  ? "submenu d-block"
-                                  : "submenu"
-                              }
-                            >
-                              <li
-                                className={
-                                  pathnames.includes("voice-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/voice-call"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Voice Call
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/video-call"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Video Call
-                                </Link>
-                              </li>
-                            </ul>
-                          ) : (
-                            ""
-                          )}
-                        </li>
+                  {/*      <li*/}
+                  {/*        className={`has-submenu ${*/}
+                  {/*          pathnames.includes("/call") ? "active" : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="#0"*/}
+                  {/*          className={*/}
+                  {/*            isSideMenuthree == "call" ? "subdrop" : ""*/}
+                  {/*          }*/}
+                  {/*          onClick={() =>*/}
+                  {/*            toggleSidebarthree(*/}
+                  {/*              isSideMenuthree == "call" ? "" : "call"*/}
+                  {/*            )*/}
+                  {/*          }*/}
+                  {/*        >*/}
+                  {/*          Call{" "}*/}
+                  {/*        </Link>*/}
+                  {/*        {isSideMenuthree == "call" ? (*/}
+                  {/*          <ul*/}
+                  {/*            className={*/}
+                  {/*              isSideMenuthree == "call"*/}
+                  {/*                ? "submenu d-block"*/}
+                  {/*                : "submenu"*/}
+                  {/*            }*/}
+                  {/*          >*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("voice-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/voice-call"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Voice Call*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("video-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/video-call"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Video Call*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*          </ul>*/}
+                  {/*        ) : (*/}
+                  {/*          ""*/}
+                  {/*        )}*/}
+                  {/*      </li>*/}
 
-                        <li
-                          className={`has-submenu ${
-                            pathnames.includes("/invoice-view") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="#0"
-                            className={
-                              isSideMenuone == "invoices" ? "subdrop" : ""
-                            }
-                            onMouseEnter={() =>
-                              toggleSidebarone(
-                                isSideMenuone == "invoices" ? "" : "invoices"
-                              )
-                            }
-                          >
-                            Invoices{" "}
-                          </Link>
-                          {isSideMenuone == "invoices" ? (
-                            <ul
-                              className={
-                                isSideMenuone == "invoices"
-                                  ? "submenu d-block"
-                                  : "submenu"
-                              }
-                            >
-                              <li
-                                className={
-                                  pathnames.includes("invoice") ? "active" : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/invoice"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Invoices
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("-view") ? "active" : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/invoice-view"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Invoice View
-                                </Link>
-                              </li>
-                            </ul>
-                          ) : (
-                            ""
-                          )}
-                        </li>
+                  {/*      <li*/}
+                  {/*        className={`has-submenu ${*/}
+                  {/*          pathnames.includes("/invoice-view") ? "active" : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="#0"*/}
+                  {/*          className={*/}
+                  {/*            isSideMenuone == "invoices" ? "subdrop" : ""*/}
+                  {/*          }*/}
+                  {/*          onMouseEnter={() =>*/}
+                  {/*            toggleSidebarone(*/}
+                  {/*              isSideMenuone == "invoices" ? "" : "invoices"*/}
+                  {/*            )*/}
+                  {/*          }*/}
+                  {/*        >*/}
+                  {/*          Invoices{" "}*/}
+                  {/*        </Link>*/}
+                  {/*        {isSideMenuone == "invoices" ? (*/}
+                  {/*          <ul*/}
+                  {/*            className={*/}
+                  {/*              isSideMenuone == "invoices"*/}
+                  {/*                ? "submenu d-block"*/}
+                  {/*                : "submenu"*/}
+                  {/*            }*/}
+                  {/*          >*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("invoice") ? "active" : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/invoice"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Invoices*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("-view") ? "active" : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/invoice-view"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Invoice View*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*          </ul>*/}
+                  {/*        ) : (*/}
+                  {/*          ""*/}
+                  {/*        )}*/}
+                  {/*      </li>*/}
 
-                        <li
-                          className={`has-submenu ${
-                            pathnames.includes("/authentication")
-                              ? "active"
-                              : ""
-                          }`}
-                        >
-                          <Link
-                            to="#0"
-                            className={
-                              isSideMenufour == "authentication"
-                                ? "subdrop"
-                                : ""
-                            }
-                            onClick={() =>
-                              toggleSidebarfour(
-                                isSideMenufour == "authentication"
-                                  ? ""
-                                  : "authentication"
-                              )
-                            }
-                          >
-                            Authentication{" "}
-                          </Link>
-                          {isSideMenufour == "authentication" ? (
-                            <ul
-                              className={
-                                isSideMenufour == "authentication"
-                                  ? "submenu d-block"
-                                  : "submenu"
-                              }
-                            >
-                              <li
-                                className={
-                                  pathnames.includes("voice-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/login-email"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Login Email
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/login-phone"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Login Phone
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/doctor-signup"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Doctor Signup
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/patient-signup"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Patient Signup
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/forgot-password"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Forgot Password 1
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/forgot-password2"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Forgot Password 2
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/email-otp"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Email OTP
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/phone-otp"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Phone OTP
-                                </Link>
-                              </li>
-                            </ul>
-                          ) : (
-                            ""
-                          )}
-                        </li>
+                  {/*      <li*/}
+                  {/*        className={`has-submenu ${*/}
+                  {/*          pathnames.includes("/authentication")*/}
+                  {/*            ? "active"*/}
+                  {/*            : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="#0"*/}
+                  {/*          className={*/}
+                  {/*            isSideMenufour == "authentication"*/}
+                  {/*              ? "subdrop"*/}
+                  {/*              : ""*/}
+                  {/*          }*/}
+                  {/*          onClick={() =>*/}
+                  {/*            toggleSidebarfour(*/}
+                  {/*              isSideMenufour == "authentication"*/}
+                  {/*                ? ""*/}
+                  {/*                : "authentication"*/}
+                  {/*            )*/}
+                  {/*          }*/}
+                  {/*        >*/}
+                  {/*          Authentication{" "}*/}
+                  {/*        </Link>*/}
+                  {/*        {isSideMenufour == "authentication" ? (*/}
+                  {/*          <ul*/}
+                  {/*            className={*/}
+                  {/*              isSideMenufour == "authentication"*/}
+                  {/*                ? "submenu d-block"*/}
+                  {/*                : "submenu"*/}
+                  {/*            }*/}
+                  {/*          >*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("voice-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/login-email"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Login Email*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("video-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/login-phone"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Login Phone*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("video-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/doctor-signup"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Doctor Signup*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("video-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/patient-signup"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Patient Signup*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("video-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/forgot-password"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Forgot Password 1*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("video-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/forgot-password2"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Forgot Password 2*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("video-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/email-otp"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Email OTP*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("video-call")*/}
+                  {/*                  ? "active"*/}
+                  {/*                  : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/phone-otp"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Phone OTP*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*          </ul>*/}
+                  {/*        ) : (*/}
+                  {/*          ""*/}
+                  {/*        )}*/}
+                  {/*      </li>*/}
 
-                        <li
-                          className={`has-submenu ${
-                            pathnames.includes("/error") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="#0"
-                            className={sideMenufive == "error" ? "subdrop" : ""}
-                            onClick={() =>
-                              toggleSidebarfive(
-                                sideMenufive == "error" ? "" : "error"
-                              )
-                            }
-                          >
-                            Error{" "}
-                          </Link>
-                          {sideMenufive == "error" ? (
-                            <ul
-                              className={
-                                sideMenufive == "error"
-                                  ? "submenu d-block"
-                                  : "submenu"
-                              }
-                            >
-                              <li
-                                className={
-                                  pathnames.includes("invoice") ? "active" : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/error-404"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Error 404
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("-view") ? "active" : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/error-500"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Error 500
-                                </Link>
-                              </li>
-                            </ul>
-                          ) : (
-                            ""
-                          )}
-                        </li>
+                  {/*      <li*/}
+                  {/*        className={`has-submenu ${*/}
+                  {/*          pathnames.includes("/error") ? "active" : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="#0"*/}
+                  {/*          className={sideMenufive == "error" ? "subdrop" : ""}*/}
+                  {/*          onClick={() =>*/}
+                  {/*            toggleSidebarfive(*/}
+                  {/*              sideMenufive == "error" ? "" : "error"*/}
+                  {/*            )*/}
+                  {/*          }*/}
+                  {/*        >*/}
+                  {/*          Error{" "}*/}
+                  {/*        </Link>*/}
+                  {/*        {sideMenufive == "error" ? (*/}
+                  {/*          <ul*/}
+                  {/*            className={*/}
+                  {/*              sideMenufive == "error"*/}
+                  {/*                ? "submenu d-block"*/}
+                  {/*                : "submenu"*/}
+                  {/*            }*/}
+                  {/*          >*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("invoice") ? "active" : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/error-404"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Error 404*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*            <li*/}
+                  {/*              className={*/}
+                  {/*                pathnames.includes("-view") ? "active" : ""*/}
+                  {/*              }*/}
+                  {/*            >*/}
+                  {/*              <Link*/}
+                  {/*                to="/pages/error-500"*/}
+                  {/*                onClick={() => onhandleCloseMenu()}*/}
+                  {/*              >*/}
+                  {/*                Error 500*/}
+                  {/*              </Link>*/}
+                  {/*            </li>*/}
+                  {/*          </ul>*/}
+                  {/*        ) : (*/}
+                  {/*          ""*/}
+                  {/*        )}*/}
+                  {/*      </li>*/}
 
-                        <li
-                          className={`${
-                            pathnames.includes("/blank-page") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="/pages/blank-page"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Starter Page
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("/aboutus") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/pricing-plan"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Pricing Plan
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("/contactus") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/faq"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            FAQ
-                          </Link>
-                        </li>
+                  {/*      <li*/}
+                  {/*        className={`${*/}
+                  {/*          pathnames.includes("/blank-page") ? "active" : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/blank-page"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Starter Page*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={*/}
+                  {/*          pathnames.includes("/aboutus") ? "active" : ""*/}
+                  {/*        }*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/pricing-plan"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Pricing Plan*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={*/}
+                  {/*          pathnames.includes("/contactus") ? "active" : ""*/}
+                  {/*        }*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/faq"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          FAQ*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
 
-                        <li
-                          className={
-                            pathnames.includes("login") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/maintenance"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Maintenance
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("login") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/comingsoon"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Coming Soon
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("/register") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/terms"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Terms & Condition
-                          </Link>
-                        </li>
-                        <li
-                          className={`${
-                            pathnames === "/forgot-password" ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="/pages/privacy-policy"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Privacy Policy
-                          </Link>
-                        </li>
-                        <li
-                          className={`${
-                            pathnames.includes("/component") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="/pages/component"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Components
-                          </Link>
-                        </li>
-                      </ul>
-                    ) : (
-                      ""
-                    )}
-                  </li>
+                  {/*      <li*/}
+                  {/*        className={*/}
+                  {/*          pathnames.includes("login") ? "active" : ""*/}
+                  {/*        }*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/maintenance"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Maintenance*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={*/}
+                  {/*          pathnames.includes("login") ? "active" : ""*/}
+                  {/*        }*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/comingsoon"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Coming Soon*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={*/}
+                  {/*          pathnames.includes("/register") ? "active" : ""*/}
+                  {/*        }*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/terms"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Terms & Condition*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={`${*/}
+                  {/*          pathnames === "/forgot-password" ? "active" : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/privacy-policy"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Privacy Policy*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={`${*/}
+                  {/*          pathnames.includes("/component") ? "active" : ""*/}
+                  {/*        }`}*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/pages/component"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Components*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*    </ul>*/}
+                  {/*  ) : (*/}
+                  {/*    ""*/}
+                  {/*  )}*/}
+                  {/*</li>*/}
 
-                  <li
-                    className={`has-submenu ${
-                      url.includes("/blog") ? "active" : ""
-                    }`}
-                  >
-                    <Link
-                      to="#"
-                      className={isSideMenu == "blog" ? "subdrop" : ""}
-                      onMouseEnter={() =>
-                        toggleSidebar(isSideMenu == "blog" ? "submenu" : "blog")
-                      }
-                    >
-                      Blog <i className="fas fa-chevron-down" />
-                    </Link>
-                    {isSideMenu == "blog" ? (
-                      <ul
-                        className={`${
-                          isSideMenu == "blog" ? "submenu d-block" : "submenu"
-                        }`}
-                      >
-                        <li
-                          className={
-                            pathnames.includes("blog-list") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/blog/blog-list"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Blog List
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("blog-grid") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/blog/blog-grid"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Blog Grid
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("blog-details") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/blog/blog-details"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Blog Details
-                          </Link>
-                        </li>
-                      </ul>
-                    ) : (
-                      ""
-                    )}
-                  </li>
-                  <li className="has-submenu">
-                    <Link
-                      to="#"
-                      // target="_blank"
-                      className={isSideMenu == "admin" ? "subdrop" : ""}
-                      onMouseEnter={() =>
-                        toggleSidebar(
-                          isSideMenu == "admin" ? "submenu" : "admin"
-                        )
-                      }
-                    >
-                      Admin
-                      <i className="fas fa-chevron-down" />
-                    </Link>
-                    {isSideMenu == "admin" ? (
-                      <ul
-                        className={`${
-                          isSideMenu == "admin" ? "submenu d-block" : "submenu"
-                        }`}
-                      >
-                        <li>
-                          <Link to="/admin" target="_blank">
-                            Admin
-                          </Link>
-                        </li>
+                  {/*<li*/}
+                  {/*  className={`has-submenu ${*/}
+                  {/*    url.includes("/blog") ? "active" : ""*/}
+                  {/*  }`}*/}
+                  {/*>*/}
+                  {/*  <Link*/}
+                  {/*    to="#"*/}
+                  {/*    className={isSideMenu == "blog" ? "subdrop" : ""}*/}
+                  {/*    onMouseEnter={() =>*/}
+                  {/*      toggleSidebar(isSideMenu == "blog" ? "submenu" : "blog")*/}
+                  {/*    }*/}
+                  {/*  >*/}
+                  {/*    Blog <i className="fas fa-chevron-down" />*/}
+                  {/*  </Link>*/}
+                  {/*  {isSideMenu == "blog" ? (*/}
+                  {/*    <ul*/}
+                  {/*      className={`${*/}
+                  {/*        isSideMenu == "blog" ? "submenu d-block" : "submenu"*/}
+                  {/*      }`}*/}
+                  {/*    >*/}
+                  {/*      <li*/}
+                  {/*        className={*/}
+                  {/*          pathnames.includes("blog-list") ? "active" : ""*/}
+                  {/*        }*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/blog/blog-list"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Blog List*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={*/}
+                  {/*          pathnames.includes("blog-grid") ? "active" : ""*/}
+                  {/*        }*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/blog/blog-grid"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Blog Grid*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*      <li*/}
+                  {/*        className={*/}
+                  {/*          pathnames.includes("blog-details") ? "active" : ""*/}
+                  {/*        }*/}
+                  {/*      >*/}
+                  {/*        <Link*/}
+                  {/*          to="/blog/blog-details"*/}
+                  {/*          onClick={() => onhandleCloseMenu()}*/}
+                  {/*        >*/}
+                  {/*          Blog Details*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*    </ul>*/}
+                  {/*  ) : (*/}
+                  {/*    ""*/}
+                  {/*  )}*/}
+                  {/*</li>*/}
+                  {/*<li className="has-submenu">*/}
+                  {/*  <Link*/}
+                  {/*    to="#"*/}
+                  {/*    // target="_blank"*/}
+                  {/*    className={isSideMenu == "admin" ? "subdrop" : ""}*/}
+                  {/*    onMouseEnter={() =>*/}
+                  {/*      toggleSidebar(*/}
+                  {/*        isSideMenu == "admin" ? "submenu" : "admin"*/}
+                  {/*      )*/}
+                  {/*    }*/}
+                  {/*  >*/}
+                  {/*    Admin*/}
+                  {/*    <i className="fas fa-chevron-down" />*/}
+                  {/*  </Link>*/}
+                  {/*  {isSideMenu == "admin" ? (*/}
+                  {/*    <ul*/}
+                  {/*      className={`${*/}
+                  {/*        isSideMenu == "admin" ? "submenu d-block" : "submenu"*/}
+                  {/*      }`}*/}
+                  {/*    >*/}
+                  {/*      <li>*/}
+                  {/*        <Link to="/admin" target="_blank">*/}
+                  {/*          Admin*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
 
-                        <li>
-                          <Link to="/pharmacyadmin" target="_blank">
-                            Pharmacy Admin
-                          </Link>
-                        </li>
-                      </ul>
-                    ) : (
-                      ""
-                    )}
-                  </li>
+                  {/*      <li>*/}
+                  {/*        <Link to="/pharmacyadmin" target="_blank">*/}
+                  {/*          Pharmacy Admin*/}
+                  {/*        </Link>*/}
+                  {/*      </li>*/}
+                  {/*    </ul>*/}
+                  {/*  ) : (*/}
+                  {/*    ""*/}
+                  {/*  )}*/}
+                  {/*</li>*/}
                   {pathnames.includes("/index-5") ||
                   pathnames.includes("/index-11") ? (
                     <li className="searchbar">
