@@ -427,7 +427,7 @@ const HomeTwelve = (props) => {
         {/*</section>*/}
         {/* /Lab Service Section */}
 
-        <FeaturePackageSection />
+        {/*<FeaturePackageSection />*/}
         {/* /Best Packages Section */}
         {/*<BestPackage />*/}
         {/* /Best Packages Section */}
