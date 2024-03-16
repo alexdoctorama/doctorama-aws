@@ -94,7 +94,7 @@ const DoctorClinicalHistory = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/doctorclinicalhistory?doctorClinicalHistoryUuid=${clinicalHistoryUuid}`);
+                const response = await axios.get(`https://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/doctorclinicalhistory?doctorClinicalHistoryUuid=${clinicalHistoryUuid}`);
                 setResponse(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -141,7 +141,7 @@ const DoctorClinicalHistory = () => {
             };
 
             console.log(flattenedData);
-            await axios.post('http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/doctorclinicalhistory', flattenedData);
+            await axios.post('https://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/doctorclinicalhistory', flattenedData);
             console.log('Data submitted successfully');
             window.location.href = '/doctor/doctor-dashboard';
         } catch (error) {

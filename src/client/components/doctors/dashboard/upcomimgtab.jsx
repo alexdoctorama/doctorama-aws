@@ -25,7 +25,7 @@ const UpcomingTab = () => {
     const role = base.role;
 
   const fetchAppointments = () => {
-    fetch('http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/appointments/doctor', {
+    fetch('https://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/appointments/doctor', {
       headers: {
         'Authorization': `Bearer ${storedToken}` // Set Authorization header with token
       }

@@ -95,7 +95,7 @@ const NutritionistClinicalHistory = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/nutritionistclinicalhistory?nutritionistClinicalHistoryUuid=${clinicalHistoryUuid}`);
+                const response = await axios.get(`https://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/nutritionistclinicalhistory?nutritionistClinicalHistoryUuid=${clinicalHistoryUuid}`);
                 setResponse(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -174,7 +174,7 @@ const NutritionistClinicalHistory = () => {
             };
 
             console.log(flattenedData);
-            await axios.post('http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/nutritionistclinicalhistory', flattenedData);
+            await axios.post('https://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/nutritionistclinicalhistory', flattenedData);
             console.log('Data submitted successfully');
             window.location.href = '/doctor/doctor-dashboard';
         } catch (error) {

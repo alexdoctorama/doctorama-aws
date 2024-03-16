@@ -63,7 +63,7 @@ const Doctors = (props) => {
 
   useEffect(() => {
     readToken();
-    fetch(`http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/users/${selectedOption}`)
+    fetch(`https://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/users/${selectedOption}`)
         .then(response => {
           if (response.ok) {
             return response.json();

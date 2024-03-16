@@ -43,7 +43,7 @@ const Checkout = (props) => {
       // No body for this request
     };
 
-    fetch(`http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/specialistsAvailabilities/${location.state.availability}?booked=true`, putRequestOptions)
+    fetch(`https://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/specialistsAvailabilities/${location.state.availability}?booked=true`, putRequestOptions)
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -79,7 +79,7 @@ const Checkout = (props) => {
     };
 
     console.log(postRequestOptions.body);
-    fetch('http://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/appointments', postRequestOptions)
+    fetch('https://ec2-16-171-147-152.eu-north-1.compute.amazonaws.com:8080/appointments', postRequestOptions)
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
